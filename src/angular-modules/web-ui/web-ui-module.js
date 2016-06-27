@@ -1,5 +1,5 @@
 (function(){
 	'use strict'
 
-	angular.module('web-ui', ['header', 'content', 'about', 'home', 'contact', 'footer'])
+	angular.module('web-ui', ['header', 'about', 'home', 'contact', 'footer'])
 })()
