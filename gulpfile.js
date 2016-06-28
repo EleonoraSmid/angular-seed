@@ -1,4 +1,5 @@
 const gulp = require('gulp'), 
+ path = require('path'),
  less = require('gulp-less'),  
  watch = require('gulp-watch'),
  minifyCSS = require('gulp-minify-css'),  
@@ -34,5 +35,11 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest( './public/css' ));
 });
 
+gulp.task('addFolder', function(folder){
+  gulp.src('./temp/test/**/*.js')
+  .pipe(gulp.dest('./temp/' + folder))
+});
+
 gulp.task('default', ['compile-less', 'watch-less']);
 gulp.task('build', ['minify-css']);  
+gulp.task('add', ['addFolder']);  
