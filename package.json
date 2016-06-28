@@ -18,7 +18,8 @@
     "gulp-less": "^3.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
-    "gulp-watch": "^4.3.8"
+    "gulp-watch": "^4.3.8",
+    "jasmine": "^2.4.1"
   },
   "devDependencies": {
     "gulp-header": "^1.8.7",
